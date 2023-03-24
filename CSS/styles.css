@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Media/Pretty-bg.jpg);
+    background-position: center;
+}
+
+
+/* Estilos Index */
+.navbar{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navbar-nav a:hover{
+    background-color: lightgray;
+}
+
+.container{
+    margin-top: 100px;
+    border-radius: 40px;
+}
+
+.col{
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 20px;
+    background: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.formulario{
+    padding: 10px;
+}
+
+.titulo-consultorio{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tit-horarios-consultorio{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.horarios-consultorio{
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.iconos-redes{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.iconos-redes-mobile{
+    display: none;
+}
+
+.texto-tel-mobile{
+    display: none;
+}
+
+.container-redes-tel{
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 0 20px 20px 0;
+}
+
+.container-redes{
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+}
+
+.container-location{
+    padding: 30px;
+    border: 0px;
+    background-color: transparent;
+}
+
+
+.location{
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.mapa{
+    border: 3px solid;
+    border-color: gray;
+    padding: 5px;
+}
+
+/* Estilos Sobre Nosotros */
+
+.img-cuerpo{
+    background-image: url(../Media/Medicos.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 500px;
+    border: 0px;
+} 
+
+.titulo-quienes{
+    border: 0px;
+    display: flex;
+    justify-content: left;
+    background-color: transparent;
+}
+
+.texto-titulo{
+    width: 600px;
+    height: 400px;
+    font-size: larger;
+    border: 0px;
+    background-color: transparent;
+}
+
+.texto-cuerpo{
+    margin-top: 100px;
+    width: 600px;
+    height: 400px;
+    font-size: larger;
+    border: 0px;
+    background-color: transparent;
+}
+
+
+.titulo-formacion-mobile{
+    display: none;
+}
+
+.titulo-formacion{
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: transparent;
+}
+
+.cuerpo-titulo{
+    font-size: larger;
+    border: 0px;
+    padding: 50px;
+    background-color: transparent;
+}
+
+
+/* Estilos Galeria */
+
+ul{
+    list-style: none;
+}
+
+.articulos-galeria{
+    margin: 20px;
+    text-align: left;
+    
+}
+
+/* Media Queries Tablet*/
+.dropdown-menu:checked{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    .nav-item{
+        display: none;
+        padding-bottom: 50px;
+    } 
+
+    .navbar-mobile{
+        display: block;
+    }
+
+    .nav-item-mobile{
+        font-size: larger;  
+    }
+
+    .nav-item-mobile:hover{
+        background-color: lightgray;   
+    }
+    .container-redes{
+        border-radius: 20px;
+        padding: 60px;
+        margin-right: 100px;
+    }
+
+    .iconos-redes{
+        display: none;
+    }
+
+    .iconos-redes-mobile{
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .bi-instagram{
+        margin-bottom: 30px;
+    }
+
+    .bi-facebook{
+        margin-bottom: 30px;
+    }
+
+    .bi-twitter{
+        margin-bottom: 30px;
+    }
+
+    .container-redes-tel{
+        padding: 60px;
+        border-radius: 20px;
+    }
+
+    .texto-tel{
+        display: none;
+    }
+
+    .texto-tel-mobile{
+        display: block;
+    }
+
+    .mapa{
+        width: 600px;
+        border: 0px;
+    }
+
+/* Sobre Nosotros tablet*/
+    .texto-titulo{
+        margin-left: 60px;
+        align-items: center;
+        border: 2px solid;
+        height: 520px;
+        padding: 30px;
+        
+    }
+
+    .titulo-formacion-mobile{
+        display: none;
+    }
+
+
+    .img-cuerpo{
+        margin-left: 120px;
+        width: 500px;
+    }
+
+    .texto-cuerpo{
+        margin-left: 60px;
+        align-items: center;
+        border: 2px solid;
+        height: 480px;
+        padding: 30px;
+    }
+}
+
+/* Media Queries Mobile */
+
+@media screen and (max-width: 375px){
+
+    /* Formulario */
+
+    .form-control{
+        width: 330px;
+    }
+
+    .form-check-input{
+        width: 30px;
+        height: 30px;
+    } 
+
+    #exampleDate1{
+        width: 200px;
+        height: 45px;
+    }
+
+    .form-check-label{
+        font-size: larger;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+
+    /* Redes */
+
+    .container-redes{
+        width: 800px;
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+
+    .titulo-redes{
+        font-size: x-large;
+    }
+
+
+    /* Sobre Nosotros */
+
+
+    .texto-titulo{
+        height: 900px;
+    }
+
+
+    .texto-cuerpo{
+        margin-top: 100px;
+        width: 100%;
+        height: 900px;
+    }
+
+
+    .titulo-formacion{
+        display: none;
+    }
+
+    .formacion{
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 400px;
+        margin-right: 200px;
+    }
+
+    .titulo-formacion-mobile{
+        display: block;
+        margin-top: 100px;
+        font-size: xx-large;
+    }
+
+    .img-cuerpo{
+        display: none;
+    }
+
+}
