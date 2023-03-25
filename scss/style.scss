@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Media/Pretty-bg.jpg);
+    background-position: center;
+}
+
+/* Estilos del INICIO */
+
+.navbar{
+    display: flex;
+    
+
+    .navbar-mobile{
+        display: none;
+    }
+
+
+    .navbar-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+
+    .navbar-nav a:hover{
+        background-color: lightgray;
+    }
+}
+
+
+.container{
+    margin-top: 3px solid;
+    border-radius: 40px;
+
+
+        .container-formulario{
+            border-radius: 20px;
+        }
+
+        .col{
+            border: 3px solid;
+            border-color: gray;
+            background: white;
+            font-family: 'Montserrat Alternates', sans-serif;
+            margin-top: 100px;
+
+
+
+            .formulario{
+                padding: 10px;
+            }
+        }
+    
+
+        .container-horarios-consultorio{
+            border-radius: 20px;
+
+            .titulo-consultorio{
+                text-align: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                }
+
+        
+            .tit-horarios-consultorio{
+                text-align: left;
+                margin-top: 50px;
+                margin-left: 20px;
+            }
+
+            .horarios-consultorio{
+                border: 3px solid;
+                border-color: gray;
+                border-radius: 10px;
+                width: 250px;
+                height: 200px;
+                text-align: left;
+                margin-top: 70px;
+                margin-left: 20px;
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+    }
+}
+
+
+
+.container-redes{
+    margin-top: 100px;
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+
+    .iconos-redes{
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 50px;
+    }
+
+    .iconos-redes-mobile{
+        display: none;
+    }
+}
+
+
+.container-redes-tel{
+    border: 3px solid;
+    border-color: gray;
+    border-radius: 0 20px 20px 0;
+    padding: 30px;
+    margin-top: 100px;
+
+
+    .texto-tel-mobile{
+        display: none;
+    }
+}
+
+
+.container-location{
+    border-radius: 20px;
+    margin-top: 120px;
+    padding: 30px;
+    border: 0px;
+    background-color: transparent;
+    max-width: 638px;
+
+    .title-location{
+        margin-top: 40px;
+    }
+
+    .location{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+}
+
+.mapa{
+    border: 3px solid;
+    border-color: gray;
+    padding: 5px;
+    overflow: hidden;
+    height: 400px;
+
+
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+
+/* Estilos del Sobre Nosotros */
+
+
+.contenedor-cuerpo{
+
+    .img-cuerpo{
+        background-image: url(../Media/Medicos.jpg);
+        background-size: cover;
+        background-position: right;
+        height: 500px;
+        border: 0px;
+        border-radius: 20px;
+    }
+
+    .titulo-quienes{
+        border: 0px;
+        display: flex;
+        justify-content: left;
+        background-color: transparent;
+    }
+
+    .texto-titulo{
+        width: 600px;
+        height: 400px;
+        font-size: larger;
+        border: 0px;
+        background-color: transparent;
+    }
+
+    .texto-cuerpo{
+        margin-top: 100px;
+        width: 600px;
+        height: 400px;
+        font-size: larger;
+        border: 0px;
+        background-color: transparent;
+    }
+    
+}
+
+.titulo-formacion-mobile{
+    display: none;
+}
+
+.formacion{
+
+    .titulo-formacion{
+        margin-top: 100px;
+        margin-left: 500px;
+        background-color: transparent;
+    }
+
+    .cuerpo-titulo{
+        font-size: larger;
+        border: 0px;
+        padding: 50px;
+        background-color: transparent;
+    }
+
+}
+
+/* Estilos Galeria */
+
+.galeria-art{
+
+    ul{
+        list-style: none;
+    }
+
+    .contenedor-articulos{
+        border-radius: 20px;
+    
+
+        .articulos-galeria{
+            margin: 20px;
+            text-align: left;
+        }
+    }
+}
