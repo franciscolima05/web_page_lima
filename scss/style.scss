@@ -1,32 +1,45 @@
+
+/* @import "../node_modules/bootstrap/scss/bootstrap"; */
+@import url(../scss/partials/_queries.scss);
+@import url(../scss/partials/_variables.scss);
+
+
+
 body{
     margin: 0;
     padding: 0;
-    background: url(../Media/Pretty-bg.jpg);
+    background-image: url('../Media/pexels-anna-shvets-6291179.jpg');
     background-position: center;
 }
 
 /* Estilos del INICIO */
 
 .navbar{
-    display: flex;
     
-
-    .navbar-mobile{
-        display: none;
+    .navbar-toggler{
+        background-color : lightgray;
     }
 
-
-    .navbar-nav{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        font-family: 'Montserrat Alternates', sans-serif;
+    .nav-item-mobile{
+        border-radius: 20px;
+        padding: 5px;
+        width: 60px;
     }
 
-
-    .navbar-nav a:hover{
-        background-color: lightgray;
+    .nav-item-mobile-long{
+        border-radius: 20px;
+        padding: 5px;
+        width: 140px;
     }
+
+    .nav-item-mobile-long:hover{
+        background: lightgray;
+    }
+
+    .nav-item-mobile:hover{
+        background: lightgray;
+    }
+
 }
 
 
@@ -158,6 +171,14 @@ body{
 /* Estilos del Sobre Nosotros */
 
 
+.body-nosotros{
+    background-image: url(../Media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+}
+
+.navbar{
+    display: block;
+}
+
 .contenedor-cuerpo{
 
     .img-cuerpo{
@@ -234,3 +255,5 @@ body{
         }
     }
 }
+
+@import "../scss/partials/queries";

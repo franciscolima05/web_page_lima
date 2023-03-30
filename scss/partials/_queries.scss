@@ -1,0 +1,125 @@
+@import url(../partials/_variables.scss);
+
+
+@media (max-width: 768px){
+
+    .nav-item{
+        display: none;
+        padding-bottom: 50px;
+    } 
+
+    .navbar-mobile{
+        display: block;
+    }
+
+    
+    .container-redes{
+        border-radius: 20px;
+        padding: 60px;
+    }
+
+    .iconos-redes-mobile{
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .container-redes-tel{
+        padding: 60px;
+        border-radius: 20px;
+        
+        h4{
+            font-size: xx-large;
+        }
+
+        .texto-tel{
+            font-size: x-large;
+        }
+    }
+
+    /* Sobre Nosotros tablet*/
+
+    .navbar{
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+
+    .texto-titulo{
+        margin-left: 60px;
+        align-items: center;
+        height: 520px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+
+    .titulo-formacion-mobile{
+        display: none;
+    }
+
+    .titulo-formacion-mobile{
+        display: none;
+    }
+
+
+    .img-cuerpo{
+        margin-left: 120px;
+        width: 500px;
+    }
+
+    .texto-cuerpo{
+        margin-left: 60px;
+        align-items: center;
+        border: 2px solid;
+        height: 480px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 375px){
+
+    .container{
+        
+        .container-horarios-consultorio{
+            
+            .horarios-consultorio{
+                margin-right: 50px;
+            }
+        }
+    }
+        
+    .contenedor-redes{
+        display: none;
+    }
+    
+    .mapa{
+        display: none;
+    }
+
+/* Sobre Nosotros */
+
+    .contenedor-nosotros{
+        
+        .img-cuerpo{
+            display: none;
+        }
+
+        .texto-titulo{
+            padding: 20px;
+            margin-bottom: 400px;
+        }
+
+        .texto-cuerpo{
+            margin-bottom: 200px;
+        }
+    }
+
+    .titulo-formacion{
+        display: none;
+    }
+
+    .container-formacion{
+        display: none;
+}
+}

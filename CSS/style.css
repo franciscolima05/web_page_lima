@@ -1,25 +1,33 @@
+/* @import "../node_modules/bootstrap/scss/bootstrap"; */
+@import url(../scss/partials/_queries.scss);
+@import url(../scss/partials/_variables.scss);
+@import url(../partials/_variables.scss);
 body {
   margin: 0;
   padding: 0;
-  background: url(../Media/Pretty-bg.jpg);
+  background-image: url("../Media/pexels-anna-shvets-6291179.jpg");
   background-position: center;
 }
 
 /* Estilos del INICIO */
-.navbar {
-  display: flex;
-}
-.navbar .navbar-mobile {
-  display: none;
-}
-.navbar .navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-.navbar .navbar-nav a:hover {
+.navbar .navbar-toggler {
   background-color: lightgray;
+}
+.navbar .nav-item-mobile {
+  border-radius: 20px;
+  padding: 5px;
+  width: 60px;
+}
+.navbar .nav-item-mobile-long {
+  border-radius: 20px;
+  padding: 5px;
+  width: 140px;
+}
+.navbar .nav-item-mobile-long:hover {
+  background: lightgray;
+}
+.navbar .nav-item-mobile:hover {
+  background: lightgray;
 }
 
 .container {
@@ -123,6 +131,14 @@ body {
 }
 
 /* Estilos del Sobre Nosotros */
+.body-nosotros {
+  background-image: url(../Media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+}
+
+.navbar {
+  display: block;
+}
+
 .contenedor-cuerpo .img-cuerpo {
   background-image: url(../Media/Medicos.jpg);
   background-size: cover;
@@ -179,6 +195,93 @@ body {
 .galeria-art .contenedor-articulos .articulos-galeria {
   margin: 20px;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    display: none;
+    padding-bottom: 50px;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+  .container-redes {
+    border-radius: 20px;
+    padding: 60px;
+  }
+  .iconos-redes-mobile {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+  }
+  .container-redes-tel {
+    padding: 60px;
+    border-radius: 20px;
+  }
+  .container-redes-tel h4 {
+    font-size: xx-large;
+  }
+  .container-redes-tel .texto-tel {
+    font-size: x-large;
+  }
+  /* Sobre Nosotros tablet*/
+  .navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .texto-titulo {
+    margin-left: 60px;
+    align-items: center;
+    height: 520px;
+    padding: 30px;
+    font-size: xx-large;
+  }
+  .titulo-formacion-mobile {
+    display: none;
+  }
+  .titulo-formacion-mobile {
+    display: none;
+  }
+  .img-cuerpo {
+    margin-left: 120px;
+    width: 500px;
+  }
+  .texto-cuerpo {
+    margin-left: 60px;
+    align-items: center;
+    border: 2px solid;
+    height: 480px;
+    padding: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .container .container-horarios-consultorio .horarios-consultorio {
+    margin-right: 50px;
+  }
+  .contenedor-redes {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+  /* Sobre Nosotros */
+  .contenedor-nosotros .img-cuerpo {
+    display: none;
+  }
+  .contenedor-nosotros .texto-titulo {
+    padding: 20px;
+    margin-bottom: 400px;
+  }
+  .contenedor-nosotros .texto-cuerpo {
+    margin-bottom: 200px;
+  }
+  .titulo-formacion {
+    display: none;
+  }
+  .container-formacion {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
