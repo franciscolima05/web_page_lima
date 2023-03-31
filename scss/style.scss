@@ -1,5 +1,5 @@
 
-/* @import "../node_modules/bootstrap/scss/bootstrap"; */
+
 @import url(../scss/partials/_queries.scss);
 @import url(../scss/partials/_variables.scss);
 
@@ -8,7 +8,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url('../Media/pexels-anna-shvets-6291179.jpg');
+    background-image: url('../Media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg');
     background-position: center;
 }
 
@@ -47,7 +47,6 @@ body{
     margin-top: 3px solid;
     border-radius: 40px;
 
-
         .container-formulario{
             border-radius: 20px;
         }
@@ -63,6 +62,14 @@ body{
 
             .formulario{
                 padding: 10px;
+                font-weight: 700;
+
+                .titulo-formulario{
+                    font-weight: 900;
+                    color: #FFB4B4;
+                    margin-bottom: 15px;
+
+                }
             }
         }
     
@@ -74,6 +81,11 @@ body{
                 text-align: left;
                 margin-top: 20px;
                 margin-left: 20px;
+                border-bottom: 3px solid;
+                border-color: #A5D7E8;
+                width: 400px;
+                color: #FFB4B4;
+                
                 }
 
         
@@ -117,6 +129,7 @@ body{
     .iconos-redes-mobile{
         display: none;
     }
+
 }
 
 
@@ -133,17 +146,28 @@ body{
     }
 }
 
+.contenedor-direccion{
 
-.container-location{
-    border-radius: 20px;
-    margin-top: 120px;
-    padding: 30px;
-    border: 0px;
-    background-color: transparent;
-    max-width: 638px;
+
+
+    .container-location{
+        border-radius: px;
+        margin-top: 120px;
+        padding: 30px;
+        border: 0px solid;
+        background-color: transparent;
+        max-width: 638px;
+    
+    }
 
     .title-location{
         margin-top: 40px;
+        border-bottom: 4px solid;
+        border-color: #A5D7E8;
+        width: 400px;
+        margin-left: 100px;
+        font-weight: 800;
+        color: #FFB4B4;
     }
 
     .location{
@@ -170,7 +194,6 @@ body{
 
 /* Estilos del Sobre Nosotros */
 
-
 .body-nosotros{
     background-image: url(../Media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
 }
@@ -179,6 +202,19 @@ body{
     display: block;
 }
 
+.contenedor-nosotros{
+
+    h1{
+        margin-left: 100px;
+        border-bottom: 4px solid;
+        border-radius: 2px;
+        border-color: purple;
+        max-width: 400px;
+        color: #FFB4B4;
+        font-weight: 700;
+        max-height: 50px;
+    }
+}
 .contenedor-cuerpo{
 
     .img-cuerpo{
@@ -216,6 +252,7 @@ body{
     
 }
 
+
 .titulo-formacion-mobile{
     display: none;
 }
@@ -226,6 +263,12 @@ body{
         margin-top: 100px;
         margin-left: 500px;
         background-color: transparent;
+        font-size: xx-large;
+        color: #FFB4B4;
+        border-bottom: 4px solid;
+        border-radius: 2px;
+        border-color: purple;
+        width: 278px;
     }
 
     .cuerpo-titulo{
@@ -233,9 +276,9 @@ body{
         border: 0px;
         padding: 50px;
         background-color: transparent;
-    }
-
+    } 
 }
+
 
 /* Estilos Galeria */
 

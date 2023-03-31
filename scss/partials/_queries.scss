@@ -77,18 +77,82 @@
     }
 }
 
+
+@media (max-width:414){
+
+    .contenedor-redes{
+        display: none;
+    }
+    
+    .mapa{
+        display: none;
+    }
+
+    
+
+
+    .img-cuerpo{
+        display: none;
+    }
+
+
+    .titulo-formacion{
+        display: none;
+    }
+
+    .container-formacion{
+        display: none;
+}    
+}
+
+
 @media (max-width: 375px){
+
+    .container-formulario{
+        width: 100px;
+
+        .formulario{
+            width: 100%;
+        }    
+}
 
     .container{
         
         .container-horarios-consultorio{
-            
+            width: 230px;
+            margin-left: 0px;
+
+
+            .titulo-consultorio{
+                font-size: larger;
+            }
+
+            .tit-horarios-consultorio{
+                font-size: larger;
+            }
+
             .horarios-consultorio{
-                margin-right: 50px;
+                margin-bottom: 20px;
+                width: 200px;
+                height: 220px;
             }
         }
     }
         
+
+    .container-location{
+        width: 10px;
+
+        .title-location{
+            font-size: large;
+        }
+
+        .location{
+            font-size: large;
+        }
+    }
+
+
     .contenedor-redes{
         display: none;
     }
@@ -100,18 +164,37 @@
 /* Sobre Nosotros */
 
     .contenedor-nosotros{
-        
+
+        h1{
+            margin-left: 100px;
+            font-size: xx-large;
+            border-bottom: 4px solid;
+            border-radius: 2px;
+            border-color: purple;
+            max-width: 200px;
+            color: #FFB4B4;
+            font-weight: 700;
+        }
+
         .img-cuerpo{
             display: none;
         }
 
         .texto-titulo{
             padding: 20px;
-            margin-bottom: 400px;
+            border: 4px solid;
+            height: 770px;
+            border-radius: 20px;
+            border-color: gray;
         }
 
         .texto-cuerpo{
             margin-bottom: 200px;
+            border: 4px solid;
+            height: 770px;
+            border-radius: 20px;
+            border-color: gray;
+            
         }
     }
 
