@@ -13,7 +13,6 @@ body{
 }
 
 /* Estilos del INICIO */
-
 .navbar{
     
     .navbar-toggler{
@@ -66,7 +65,6 @@ body{
 
                 .titulo-formulario{
                     font-weight: 900;
-                    color: #FFB4B4;
                     margin-bottom: 15px;
 
                 }
@@ -252,6 +250,13 @@ body{
     
 }
 
+.dra{
+    font-weight: 900;
+}
+
+.dr{
+    font-weight: 900;
+}
 
 .titulo-formacion-mobile{
     display: none;
@@ -282,21 +287,53 @@ body{
 
 /* Estilos Galeria */
 
-.galeria-art{
-
-    ul{
-        list-style: none;
-    }
-
-    .contenedor-articulos{
-        border-radius: 20px;
-    
-
-        .articulos-galeria{
-            margin: 20px;
-            text-align: left;
-        }
-    }
+.text {
+    position: absolute;
+    top: 20%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 4em;
+    font-weight: 500;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 }
+
+
+
+.galeria-img{
+    transform: translateX(57%);
+    margin-top: 300px;
+    max-width: 900px;
+    max-height: 800px;
+}
+
+.container-galeria{
+    .columna-galeria{
+        border: 0px;
+        background-color: transparent;
+    }
+
+}
+
+    .card{
+        margin-top: 100px;
+        margin-left: 140px;
+        border-radius: 20px;
+    }
 
 @import "../scss/partials/queries";
