@@ -8,21 +8,24 @@
         padding-bottom: 50px;
     } 
 
-    .navbar-mobile{
-        display: block;
+
+    .container-formulario{
+        max-width: 400px;
     }
 
+    .container-horarios-consultorio{
+        max-width: 400px;
+
+        .titulo-consultorio{
+            max-width: 200px;
+        }
+    }
     
     .container-redes{
         border-radius: 20px;
         padding: 60px;
     }
 
-    .iconos-redes-mobile{
-        display: flex;
-        justify-content: left;
-        margin-top: 20px;
-    }
 
     .container-redes-tel{
         padding: 60px;
@@ -37,6 +40,22 @@
         }
     }
 
+
+    .container-location{
+
+        .title-location{
+            width: 200px;
+            transform: translateX(-40px);
+        }
+
+    }
+
+    .container-location{
+        .mapa{
+            max-width: 100%;
+        }
+    } 
+
     /* Sobre Nosotros tablet*/
 
     .navbar{
@@ -45,21 +64,21 @@
         padding: 0;
     }
 
+    
+
+    .contenedor-nosotros{
+        h1{
+            max-height: 200px;
+            max-width: 170px;
+            transform: translateY(40px);
+        }
+    }
 
     .texto-titulo{
         margin-left: 60px;
         align-items: center;
         height: 520px;
         padding: 30px;
-        font-size: xx-large;
-    }
-
-    .titulo-formacion-mobile{
-        display: none;
-    }
-
-    .titulo-formacion-mobile{
-        display: none;
     }
 
 
@@ -69,140 +88,326 @@
     }
 
     .texto-cuerpo{
-        margin-left: 60px;
+        margin-left: 75px;
         align-items: center;
         border: 2px solid;
         height: 480px;
         padding: 30px;
     }
+
+    .formacion{
+        transform: translateX(5%);
+        max-width: 700px;
+        
+
+        .titulo-formacion{
+            transform: translateX(-130px);
+        }
+    }
+
+
+/* Galeria Tablet */
+
+.galeria-img{
+    max-width: 500px;
+    transform: translateX(25%);
+    margin-top: 500px;
+}
+
+.container-galeria{
+    transform: translateY(-100px);
 }
 
 
-@media (max-width:414){
-
-    .contenedor-redes{
-        display: none;
-    }
-    
-    .mapa{
-        display: none;
-    }
-
-    
-
-
-    .img-cuerpo{
-        display: none;
-    }
-
-
-    .titulo-formacion{
-        display: none;
-    }
-
-    .container-formacion{
-        display: none;
-}    
 }
 
-
-@media (max-width: 375px){
-
-    .container-formulario{
-        width: 100px;
-
-        .formulario{
-            width: 100%;
-        }    
-}
+@media (max-width:414px){
+/* Inicio mobile */
+    .text-inicio{
+        font-size: 60px;
+    }
 
     .container{
-        
+        margin-right: 0px;
         .container-horarios-consultorio{
-            width: 230px;
-            margin-left: 0px;
-
-
-            .titulo-consultorio{
-                font-size: larger;
-            }
-
-            .tit-horarios-consultorio{
-                font-size: larger;
-            }
-
+            margin-right: 0px;
             .horarios-consultorio{
-                margin-bottom: 20px;
-                width: 200px;
-                height: 220px;
+                margin-right: 50px;
             }
         }
     }
-        
-
-    .container-location{
-        width: 10px;
-
-        .title-location{
-            font-size: large;
-        }
-
-        .location{
-            font-size: large;
-        }
-    }
-
 
     .contenedor-redes{
-        display: none;
+        margin-right: 0px;
+        .container-redes{
+            margin-right: 0px;
+            display: flex;
+            height: 600px;
+
+            .titulo-redes{
+                transform: translateX(80px);
+            }
+
+            .iconos-redes{
+                .bi-instagram{
+                    position: absolute;
+                    top: 1950px;
+                    right: 190px;
+                }
+
+                .bi-facebook{
+                    position: absolute;
+                    top: 1650px;
+                    right: 190px;
+                }
+
+                .bi-twitter{
+                    position: absolute;
+                    top: 1800px;
+                    right: 190px;
+                }
+            }
+        }
+
     }
-    
+
+    .container-location{
+        position: absolute;
+        left: 10px;
+        top: 2400px;
+    }
+
     .mapa{
         display: none;
     }
 
-/* Sobre Nosotros */
+    /* Sobre Nosotros */
+
+    .ubicar{
+        transform: translateY(-150px);
+    }
 
     .contenedor-nosotros{
-
-        h1{
-            margin-left: 100px;
-            font-size: xx-large;
-            border-bottom: 4px solid;
-            border-radius: 2px;
-            border-color: purple;
-            max-width: 200px;
-            color: #FFB4B4;
-            font-weight: 700;
-        }
-
+        
         .img-cuerpo{
             display: none;
         }
 
         .texto-titulo{
             padding: 20px;
-            border: 4px solid;
-            height: 770px;
-            border-radius: 20px;
-            border-color: gray;
+            margin-bottom: 200px;
+            margin-top: 0px;
+
         }
 
         .texto-cuerpo{
             margin-bottom: 200px;
-            border: 4px solid;
-            height: 770px;
-            border-radius: 20px;
-            border-color: gray;
-            
         }
     }
 
-    .titulo-formacion{
+
+    .formacion{
+        transform: translateX(60px);
+        height: 850px;
+        width: 400px;
+        padding: 0px;
+        justify-content: left;
+
+        .titulo-formacion{
+            transform: translateX(-320px);
+        }
+
+        .dra-nombre{
+            position: absolute;
+            top: 200px;
+            left: 70px;
+        }
+
+        .dr-nombre{
+            position: absolute;
+            top: 550px;
+            left: 100px;
+        }
+        
+        .luciana{
+            position: absolute;
+            right: 10px;
+            top: 300px;
+        }
+
+        .santiago{
+            position: absolute;
+            right: 10px;
+            top: 650px;
+        }
+
+        
+    }
+
+/* Galeria */
+.text{
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    transform: translateX(220px);
+}
+
+.galeria-img{
+    position: absolute;
+    bottom: 300px;
+    right: 40px;
+    width: 400px;
+}
+
+.container-galeria{
+    position: absolute;
+    top: 500px;
+    transform: translateX(-75px);
+}
+
+}
+
+
+@media (max-width: 375px){
+
+    .text-inicio{
+        font-size: 60px;
+    }
+
+    .container{
+        margin-right: 0px;
+        .container-horarios-consultorio{
+            margin-right: 0px;
+            .horarios-consultorio{
+                margin-right: 50px;
+            }
+        }
+    }
+
+    .contenedor-redes{
+        margin-right: 0px;
+        .container-redes{
+            margin-right: 0px;
+            display: flex;
+            height: 600px;
+
+            .titulo-redes{
+                transform: translateX(65px);
+            }
+
+            .iconos-redes{
+                .bi-instagram{
+                    transform: translateY(400px);
+                }
+
+                .bi-facebook{
+                    position: absolute;
+                    top: 1650px;
+                    right: 165px;
+                }
+
+                .bi-twitter{
+                    position: absolute;
+                    top: 1800px;
+                    right: 165px;
+                }
+            }
+        }
+
+    }
+
+    .container-location{
+        margin-right: 0px;
+        transform: translateY(-200px);
+    }
+
+    .mapa{
         display: none;
     }
 
-    .container-formacion{
-        display: none;
-}
+/* Sobre Nosotros */
+
+    .ubicar{
+        transform: translateY(-150px);
+    }
+
+    .contenedor-nosotros{
+        
+        .img-cuerpo{
+            display: none;
+        }
+
+        .texto-titulo{
+            padding: 20px;
+            margin-bottom: 200px;
+            margin-top: 0px;
+
+        }
+
+        .texto-cuerpo{
+            margin-bottom: 200px;
+        }
+    }
+
+
+    .formacion{
+        transform: translateX(60px);
+        height: 850px;
+        width: 400px;
+        padding: 0px;
+        justify-content: left;
+
+        .titulo-formacion{
+            transform: translateX(-320px);
+        }
+
+        .dra-nombre{
+            position: absolute;
+            top: 200px;
+            left: 70px;
+        }
+
+        .dr-nombre{
+            position: absolute;
+            top: 550px;
+            left: 100px;
+        }
+        
+        .luciana{
+            position: absolute;
+            right: 10px;
+            top: 300px;
+        }
+
+        .santiago{
+            position: absolute;
+            right: 10px;
+            top: 650px;
+        }
+
+        
+    }
+
+/* Galeria */
+
+    .text{
+        font-size: 40px;
+        position: absolute;
+        top: 100px;
+        transform: translateX(220px);
+    }
+
+    .galeria-img{
+        position: absolute;
+        bottom: 70px;
+        right: 40px;
+        width: 400px;
+    }
+
+    .container-galeria{
+        position: absolute;
+        top: 500px;
+        transform: translateX(-100px);
+    }
+
 }
