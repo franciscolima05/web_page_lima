@@ -297,7 +297,9 @@
 
             .iconos-redes{
                 .bi-instagram{
-                    transform: translateY(400px);
+                    position: absolute;
+                    top: 1950px;
+                    right: 165px;
                 }
 
                 .bi-facebook{
@@ -318,7 +320,6 @@
 
     .container-location{
         margin-right: 0px;
-        transform: translateY(-200px);
     }
 
     .mapa{

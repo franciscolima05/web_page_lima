@@ -490,7 +490,9 @@ body {
     transform: translateX(65px);
   }
   .contenedor-redes .container-redes .iconos-redes .bi-instagram {
-    transform: translateY(400px);
+    position: absolute;
+    top: 1950px;
+    right: 165px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-facebook {
     position: absolute;
@@ -504,7 +506,6 @@ body {
   }
   .container-location {
     margin-right: 0px;
-    transform: translateY(-200px);
   }
   .mapa {
     display: none;
