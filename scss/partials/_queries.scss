@@ -1,5 +1,30 @@
 @import url(../partials/_variables.scss);
 
+@media (max-width: 1362px){
+    /* Sobre Nosotros*/
+    .ubicar{
+        transform: translateX(580px);
+    }
+
+    /* Galeria */
+    .text{
+        transform: translateX(600px);
+        width: 1000px;
+    }
+
+    .galeria-img{
+        position: absolute;
+        right: 670px;
+        top: 200px;
+        max-width: 900px;
+
+    }
+
+    .columna-galeria{
+        transform: translateY(1000px);
+    }
+
+}
 
 @media (max-width: 768px){
 
