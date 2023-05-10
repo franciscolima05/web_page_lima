@@ -18,7 +18,8 @@ body{
     position: absolute;
     top: 5%; 
     right: 50%;
-    transform: translate(50%,-50%);
+    position: absolute;
+    left: 840px;
     text-transform: uppercase;
     font-family: verdana;
     font-size: 4em;
@@ -127,11 +128,15 @@ body{
                 border-radius: 10px;
                 width: 250px;
                 height: 200px;
-                text-align: left;
-                margin-top: 70px;
-                margin-left: 20px;
-                padding-left: 20px;
-                padding-top: 10px;
+
+                .lista-horarios{
+                    list-style: none;
+                    text-align: left;
+
+                    li{
+                        margin-top: 20px;
+                    }
+                }
             }
     }
 }
@@ -222,6 +227,7 @@ body{
 
 .body-nosotros{
     background-image: url(../Media/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+    
 }
 
 .navbar{
@@ -293,7 +299,8 @@ body{
     border-radius: 30px;
     max-width: 1000px;
     max-height: 1400px;
-    transform: translateX(50%);
+    position: absolute;
+    left: 500px;
     margin-top: 200px;
 
     .titulo-formacion{
@@ -320,9 +327,8 @@ body{
 
 .text {
     position: absolute;
-    top: 20%; 
-    right: 50%;
-    transform: translate(50%,-50%);
+    top: 100px; 
+    right: 500px;
     text-transform: uppercase;
     font-family: verdana;
     font-size: 4em;
@@ -347,8 +353,8 @@ body{
 
 
 .galeria-img{
-    transform: translateX(57%);
     margin-top: 300px;
+    margin-left: 530px;
     max-width: 900px;
     max-height: 800px;
 }
