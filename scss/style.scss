@@ -50,13 +50,13 @@ body{
 
     .nav-item-mobile{
         border-radius: 20px;
-        padding: 5px;
+        padding: 1px;
         width: 60px;
     }
 
     .nav-item-mobile-long{
         border-radius: 20px;
-        padding: 5px;
+        padding: 1px;
         width: 140px;
     }
 
@@ -72,7 +72,7 @@ body{
 
 
 .container{
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 40px;
 
         .container-formulario{
@@ -89,7 +89,7 @@ body{
 
 
             .formulario{
-                padding: 10px;
+                padding: 2px;
                 font-weight: 700;
 
                 .titulo-formulario{
@@ -106,8 +106,6 @@ body{
 
             .titulo-consultorio{
                 text-align: left;
-                margin-top: 20px;
-                margin-left: 20px;
                 border-bottom: 3px solid;
                 border-color: #A5D7E8;
                 width: 400px;
@@ -118,8 +116,8 @@ body{
         
             .tit-horarios-consultorio{
                 text-align: left;
-                margin-top: 50px;
-                margin-left: 20px;
+                position: absolute;
+                top: 230px;
             }
 
             .horarios-consultorio{
@@ -128,6 +126,8 @@ body{
                 border-radius: 10px;
                 width: 250px;
                 height: 200px;
+                position: absolute;
+                top: 300px;
 
                 .lista-horarios{
                     list-style: none;
@@ -144,7 +144,6 @@ body{
 
 
 .container-redes{
-    margin-top: 100px;
     border: 3px solid;
     border-color: gray;
     border-radius: 20px 0 0 20px;
@@ -154,7 +153,7 @@ body{
         display: flex;
         justify-content: center;
         gap: 200px;
-        margin-top: 50px;
+        margin-top: 40px
     }
 
     .iconos-redes-mobile{
@@ -169,7 +168,6 @@ body{
     border-color: gray;
     border-radius: 0 20px 20px 0;
     padding: 30px;
-    margin-top: 100px;
 
 
     .texto-tel-mobile{
@@ -183,7 +181,6 @@ body{
 
     .container-location{
         border-radius: px;
-        margin-top: 120px;
         padding: 30px;
         border: 0px solid;
         background-color: transparent;
@@ -192,18 +189,20 @@ body{
     }
 
     .title-location{
-        margin-top: 40px;
         border-bottom: 4px solid;
         border-color: #A5D7E8;
         width: 400px;
-        margin-left: 100px;
         font-weight: 800;
         color: #FFB4B4;
+        position: absolute;
+        left: 500px;
     }
 
     .location{
         font-size: 24px;
-        margin-top: 40px;
+        position: absolute;
+        top: 1250px;
+        right: 1050px;
     }
 }
 
@@ -237,7 +236,8 @@ body{
 .contenedor-nosotros{
 
     h1{
-        margin-left: 100px;
+        position: absolute;
+        left: 500px;
         border-bottom: 4px solid;
         border-radius: 2px;
         border-color: purple;
@@ -304,7 +304,8 @@ body{
     margin-top: 200px;
 
     .titulo-formacion{
-        margin-left: 350px;
+        position: absolute;
+        left: 350px;
         background-color: transparent;
         font-size: xx-large;
         color: #FFB4B4;
@@ -353,13 +354,20 @@ body{
 
 
 .galeria-img{
-    margin-top: 300px;
-    margin-left: 530px;
+    position: absolute;
+    top: 400px;
+    right: 500px;
     max-width: 900px;
     max-height: 800px;
 }
 
 .container-galeria{
+
+    position: absolute;
+    top: 1000px;
+    right: 540px;
+
+
     .columna-galeria{
         border: 0px;
         background-color: transparent;
@@ -368,9 +376,8 @@ body{
 }
 
     .card{
-        margin-top: 100px;
-        margin-left: 140px;
         border-radius: 20px;
+
     }
 
 @import "../scss/partials/queries";

@@ -27,12 +27,12 @@ body {
 }
 .navbar .nav-item-mobile {
   border-radius: 20px;
-  padding: 5px;
+  padding: 1px;
   width: 60px;
 }
 .navbar .nav-item-mobile-long {
   border-radius: 20px;
-  padding: 5px;
+  padding: 1px;
   width: 140px;
 }
 .navbar .nav-item-mobile-long:hover {
@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 40px;
 }
 .container .container-formulario {
@@ -57,7 +57,7 @@ body {
   margin-top: 100px;
 }
 .container .col .formulario {
-  padding: 10px;
+  padding: 2px;
   font-weight: 700;
 }
 .container .col .formulario .titulo-formulario {
@@ -69,8 +69,6 @@ body {
 }
 .container .container-horarios-consultorio .titulo-consultorio {
   text-align: left;
-  margin-top: 20px;
-  margin-left: 20px;
   border-bottom: 3px solid;
   border-color: #A5D7E8;
   width: 400px;
@@ -78,8 +76,8 @@ body {
 }
 .container .container-horarios-consultorio .tit-horarios-consultorio {
   text-align: left;
-  margin-top: 50px;
-  margin-left: 20px;
+  position: absolute;
+  top: 230px;
 }
 .container .container-horarios-consultorio .horarios-consultorio {
   border: 3px solid;
@@ -87,6 +85,8 @@ body {
   border-radius: 10px;
   width: 250px;
   height: 200px;
+  position: absolute;
+  top: 300px;
 }
 .container .container-horarios-consultorio .horarios-consultorio .lista-horarios {
   list-style: none;
@@ -97,7 +97,6 @@ body {
 }
 
 .container-redes {
-  margin-top: 100px;
   border: 3px solid;
   border-color: gray;
   border-radius: 20px 0 0 20px;
@@ -107,7 +106,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 200px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .container-redes .iconos-redes-mobile {
   display: none;
@@ -118,7 +117,6 @@ body {
   border-color: gray;
   border-radius: 0 20px 20px 0;
   padding: 30px;
-  margin-top: 100px;
 }
 .container-redes-tel .texto-tel-mobile {
   display: none;
@@ -126,24 +124,25 @@ body {
 
 .contenedor-direccion .container-location {
   border-radius: px;
-  margin-top: 120px;
   padding: 30px;
   border: 0px solid;
   background-color: transparent;
   max-width: 638px;
 }
 .contenedor-direccion .title-location {
-  margin-top: 40px;
   border-bottom: 4px solid;
   border-color: #A5D7E8;
   width: 400px;
-  margin-left: 100px;
   font-weight: 800;
   color: #FFB4B4;
+  position: absolute;
+  left: 500px;
 }
 .contenedor-direccion .location {
   font-size: 24px;
-  margin-top: 40px;
+  position: absolute;
+  top: 1250px;
+  right: 1050px;
 }
 
 .mapa {
@@ -169,7 +168,8 @@ body {
 }
 
 .contenedor-nosotros h1 {
-  margin-left: 100px;
+  position: absolute;
+  left: 500px;
   border-bottom: 4px solid;
   border-radius: 2px;
   border-color: purple;
@@ -228,7 +228,8 @@ body {
   margin-top: 200px;
 }
 .formacion .titulo-formacion {
-  margin-left: 350px;
+  position: absolute;
+  left: 350px;
   background-color: transparent;
   font-size: xx-large;
   color: #FFB4B4;
@@ -258,20 +259,24 @@ body {
 }
 
 .galeria-img {
-  margin-top: 300px;
-  margin-left: 530px;
+  position: absolute;
+  top: 400px;
+  right: 500px;
   max-width: 900px;
   max-height: 800px;
 }
 
+.container-galeria {
+  position: absolute;
+  top: 1000px;
+  right: 540px;
+}
 .container-galeria .columna-galeria {
   border: 0px;
   background-color: transparent;
 }
 
 .card {
-  margin-top: 100px;
-  margin-left: 140px;
   border-radius: 20px;
 }
 
@@ -375,7 +380,7 @@ body {
   }
   .formacion .titulo-formacion {
     position: absolute;
-    left: -130px;
+    left: 200px;
   }
   /* Galeria Tablet */
   .navbar .container-fluid .boton-nav-gl {
@@ -391,12 +396,13 @@ body {
   .galeria-img {
     width: 90%;
     position: absolute;
-    top: 100px;
+    top: 300px;
     right: 40px;
   }
   .container-galeria {
     position: absolute;
-    bottom: -400px;
+    top: -200px;
+    left: 190px;
   }
 }
 @media (max-width: 414px) {
@@ -416,9 +422,19 @@ body {
   }
   .container .container-horarios-consultorio {
     margin-right: 0px;
+    height: 450px;
+  }
+  .container .container-horarios-consultorio .tit-horarios-consultorio {
+    position: absolute;
+    top: 845px;
   }
   .container .container-horarios-consultorio .horarios-consultorio {
-    margin-right: 50px;
+    width: 200px;
+    position: absolute;
+    top: 900px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio ul {
+    font-size: 14px;
   }
   .contenedor-redes {
     margin-right: 0px;
@@ -433,23 +449,24 @@ body {
   }
   .contenedor-redes .container-redes .iconos-redes .bi-instagram {
     position: absolute;
-    top: 1850px;
+    top: 1750px;
     right: 190px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-facebook {
     position: absolute;
-    top: 1550px;
+    top: 1450px;
     right: 190px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-twitter {
     position: absolute;
-    top: 1700px;
+    top: 1600px;
     right: 190px;
   }
   .container-location {
-    position: absolute;
-    left: 10px;
-    top: 2400px;
+    display: none;
+  }
+  .location {
+    display: none;
   }
   .mapa {
     display: none;
@@ -493,7 +510,7 @@ body {
   }
   .formacion .titulo-formacion {
     position: absolute;
-    left: -290px;
+    left: 55px;
   }
   .formacion .dra-nombre {
     position: absolute;
@@ -529,14 +546,14 @@ body {
   }
   .galeria-img {
     position: absolute;
-    top: 0px;
+    top: 200px;
     right: 7px;
     width: 400px;
   }
   .container-galeria {
     position: absolute;
-    top: -400px;
-    left: -135px;
+    top: -500px;
+    left: px;
   }
 }
 @media (max-width: 375px) {
@@ -566,17 +583,17 @@ body {
   }
   .contenedor-redes .container-redes .iconos-redes .bi-instagram {
     position: absolute;
-    top: 1850px;
+    top: 1800px;
     right: 165px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-facebook {
     position: absolute;
-    top: 1550px;
+    top: 1500px;
     right: 165px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-twitter {
     position: absolute;
-    top: 1700px;
+    top: 1650px;
     right: 165px;
   }
   .container-location {
@@ -653,14 +670,226 @@ body {
   }
   .galeria-img {
     position: absolute;
-    bottom: 70px;
     right: 0px;
     width: 400px;
   }
   .container-galeria {
     position: absolute;
     top: -500px;
-    left: -150px;
+    left: -13px;
+  }
+}
+@media (max-width: 452px) {
+  .navbar .container-fluid button {
+    position: absolute;
+    top: 10px;
+    right: 65px;
+  }
+  .text-inicio {
+    font-size: 60px;
+    position: absolute;
+    left: 100px;
+  }
+  .container {
+    margin-right: 0px;
+  }
+  .container .container-horarios-consultorio {
+    margin-right: 0px;
+    height: 450px;
+  }
+  .container .container-horarios-consultorio .tit-horarios-consultorio {
+    position: absolute;
+    top: 845px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio {
+    width: 200px;
+    position: absolute;
+    top: 900px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio ul {
+    font-size: 14px;
+  }
+  .contenedor-redes {
+    margin-right: 0px;
+  }
+  .contenedor-redes .container-redes {
+    margin-right: 0px;
+    display: flex;
+    height: 600px;
+  }
+  .contenedor-redes .container-redes .titulo-redes {
+    position: absolute;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-instagram {
+    position: absolute;
+    top: 1750px;
+    right: 190px;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-facebook {
+    position: absolute;
+    top: 1450px;
+    right: 190px;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-twitter {
+    position: absolute;
+    top: 1600px;
+    right: 190px;
+  }
+  .container-location {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+}
+@media (max-width: 464px) {
+  .navbar .container-fluid button {
+    position: absolute;
+    top: 10px;
+    right: 65px;
+  }
+  .text-inicio {
+    font-size: 60px;
+    position: absolute;
+    left: 100px;
+  }
+  .container {
+    margin-right: 0px;
+  }
+  .container .container-horarios-consultorio {
+    margin-right: 0px;
+    height: 450px;
+  }
+  .container .container-horarios-consultorio .tit-horarios-consultorio {
+    position: absolute;
+    top: 845px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio {
+    width: 200px;
+    position: absolute;
+    top: 900px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio ul {
+    font-size: 14px;
+  }
+  .contenedor-redes {
+    margin-right: 0px;
+  }
+  .contenedor-redes .container-redes {
+    margin-right: 0px;
+    display: flex;
+    height: 600px;
+  }
+  .contenedor-redes .container-redes .titulo-redes {
+    position: absolute;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-instagram {
+    position: absolute;
+    top: 1750px;
+    right: 190px;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-facebook {
+    position: absolute;
+    top: 1450px;
+    right: 190px;
+  }
+  .contenedor-redes .container-redes .iconos-redes .bi-twitter {
+    position: absolute;
+    top: 1600px;
+    right: 190px;
+  }
+  .container-location {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+}
+@media (max-width: 752px) {
+  .container {
+    margin-right: 0px;
+  }
+  .container .container-horarios-consultorio {
+    margin-right: 0px;
+    height: 450px;
+  }
+  .container .container-horarios-consultorio .tit-horarios-consultorio {
+    position: absolute;
+    top: 845px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio {
+    width: 200px;
+  }
+  .container .container-horarios-consultorio .horarios-consultorio ul {
+    font-size: 14px;
+  }
+}
+@media (max-width: 562px) {
+  .navbar .container-fluid .boton-nav-nst {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .contenedor-nosotros .img-cuerpo {
+    display: none;
+  }
+  .contenedor-nosotros .titulo-quienes {
+    position: absolute;
+    top: 0px;
+    left: -50px;
+  }
+  .contenedor-nosotros .texto-titulo {
+    padding: 20px;
+    margin-bottom: 200px;
+    margin-top: 0px;
+    position: absolute;
+    top: 300px;
+    left: -60px;
+  }
+  .contenedor-nosotros .texto-cuerpo {
+    margin-bottom: 200px;
+    position: absolute;
+    left: -70px;
+    bottom: -100px;
+  }
+  .formacion {
+    height: 850px;
+    width: 400px;
+    padding: 0px;
+    justify-content: left;
+    position: absolute;
+    left: 65px;
+    bottom: -1000px;
+  }
+  .formacion .titulo-formacion {
+    position: absolute;
+    left: 55px;
+  }
+  .formacion .dra-nombre {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+  }
+  .formacion .dr-nombre {
+    position: absolute;
+    top: 550px;
+    left: 100px;
+  }
+  .formacion .luciana {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+  }
+  .formacion .santiago {
+    position: absolute;
+    right: 10px;
+    top: 650px;
   }
 }
 

@@ -23,7 +23,7 @@
 
 }
 
-@media (max-width: 768px){
+@media (max-width: $tablet){
 
     .navbar{
         .container-fluid{
@@ -143,7 +143,7 @@
 
         .titulo-formacion{
             position: absolute;
-            left: -130px;
+            left: 200px;
         }
     }
 
@@ -170,19 +170,20 @@
 .galeria-img{
     width: 90%;
     position: absolute;
-    top: 100px;
+    top: 300px;
     right: 40px;
 }
 
 .container-galeria{
     position: absolute;
-    bottom: -400px;
+    top: -200px;
+    left: 190px;
 }
 
 
 }
 
-@media (max-width:414px){
+@media (max-width:$se){
 /* Inicio mobile */
 
 .navbar{
@@ -206,8 +207,21 @@
         margin-right: 0px;
         .container-horarios-consultorio{
             margin-right: 0px;
+            height: 450px;
+
+            .tit-horarios-consultorio{
+                position: absolute;
+                top: 845px;
+            }
+
             .horarios-consultorio{
-                margin-right: 50px;
+                width: 200px;
+                position: absolute;
+                top: 900px;
+                
+                ul{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -226,19 +240,19 @@
             .iconos-redes{
                 .bi-instagram{
                     position: absolute;
-                    top: 1850px;
+                    top: 1750px;
                     right: 190px;
                 }
 
                 .bi-facebook{
                     position: absolute;
-                    top: 1550px;
+                    top: 1450px;
                     right: 190px;
                 }
 
                 .bi-twitter{
                     position: absolute;
-                    top: 1700px;
+                    top: 1600px;
                     right: 190px;
                 }
             }
@@ -247,10 +261,14 @@
     }
 
     .container-location{
-        position: absolute;
-        left: 10px;
-        top: 2400px;
+        display: none;
     }
+
+    .location{
+        display: none;
+    }
+
+
 
     .mapa{
         display: none;
@@ -310,7 +328,7 @@
 
         .titulo-formacion{
             position: absolute;
-            left: -290px;
+            left: 55px;
         }
 
         .dra-nombre{
@@ -362,15 +380,15 @@
 
 .galeria-img{
     position: absolute;
-    top: 0px;
+    top: 200px;
     right: 7px;
     width: 400px;
 }
 
 .container-galeria{
     position: absolute;
-    top: -400px;
-    left: -135px;
+    top: -500px;
+    left: px;
 }
 
 }
@@ -408,19 +426,19 @@
             .iconos-redes{
                 .bi-instagram{
                     position: absolute;
-                    top: 1850px;
+                    top: 1800px;
                     right: 165px;
                 }
 
                 .bi-facebook{
                     position: absolute;
-                    top: 1550px;
+                    top: 1500px;
                     right: 165px;
                 }
 
                 .bi-twitter{
                     position: absolute;
-                    top: 1700px;
+                    top: 1650px;
                     right: 165px;
                 }
             }
@@ -530,7 +548,6 @@
 
     .galeria-img{
         position: absolute;
-        bottom: 70px;
         right: 0px;
         width: 400px;
     }
@@ -538,7 +555,296 @@
     .container-galeria{
         position: absolute;
         top: -500px;
-        left: -150px;
+        left: -13px;
     }
 
+}
+
+@media (max-width: 452px){
+    .navbar{
+        .container-fluid{
+            button{
+                position: absolute;
+                top: 10px;
+                right: 65px;
+            }
+        }
+    }
+    
+    
+        .text-inicio{
+            font-size: 60px;
+            position: absolute;
+            left: 100px;
+        }
+    
+        .container{
+            margin-right: 0px;
+            .container-horarios-consultorio{
+                margin-right: 0px;
+                height: 450px;
+    
+                .tit-horarios-consultorio{
+                    position: absolute;
+                    top: 845px;
+                }
+    
+                .horarios-consultorio{
+                    width: 200px;
+                    position: absolute;
+                    top: 900px;
+                    
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .contenedor-redes{
+            margin-right: 0px;
+            .container-redes{
+                margin-right: 0px;
+                display: flex;
+                height: 600px;
+    
+                .titulo-redes{
+                    position: absolute;
+                }
+    
+                .iconos-redes{
+                    .bi-instagram{
+                        position: absolute;
+                        top: 1750px;
+                        right: 190px;
+                    }
+    
+                    .bi-facebook{
+                        position: absolute;
+                        top: 1450px;
+                        right: 190px;
+                    }
+    
+                    .bi-twitter{
+                        position: absolute;
+                        top: 1600px;
+                        right: 190px;
+                    }
+                }
+            }
+    
+        }
+    
+        .container-location{
+            display: none;
+        }
+    
+        .location{
+            display: none;
+        }
+    
+    
+    
+        .mapa{
+            display: none;
+        }
+    
+}
+
+@media (max-width: 464px){
+    .navbar{
+        .container-fluid{
+            button{
+                position: absolute;
+                top: 10px;
+                right: 65px;
+            }
+        }
+    }
+    
+    
+        .text-inicio{
+            font-size: 60px;
+            position: absolute;
+            left: 100px;
+        }
+    
+        .container{
+            margin-right: 0px;
+            .container-horarios-consultorio{
+                margin-right: 0px;
+                height: 450px;
+    
+                .tit-horarios-consultorio{
+                    position: absolute;
+                    top: 845px;
+                }
+    
+                .horarios-consultorio{
+                    width: 200px;
+                    position: absolute;
+                    top: 900px;
+                    
+                    ul{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .contenedor-redes{
+            margin-right: 0px;
+            .container-redes{
+                margin-right: 0px;
+                display: flex;
+                height: 600px;
+    
+                .titulo-redes{
+                    position: absolute;
+                }
+    
+                .iconos-redes{
+                    .bi-instagram{
+                        position: absolute;
+                        top: 1750px;
+                        right: 190px;
+                    }
+    
+                    .bi-facebook{
+                        position: absolute;
+                        top: 1450px;
+                        right: 190px;
+                    }
+    
+                    .bi-twitter{
+                        position: absolute;
+                        top: 1600px;
+                        right: 190px;
+                    }
+                }
+            }
+    
+        }
+    
+        .container-location{
+            display: none;
+        }
+    
+        .location{
+            display: none;
+        }
+    
+    
+    
+        .mapa{
+            display: none;
+        }
+    
+}
+
+@media (max-width: 752px){
+    .container{
+        margin-right: 0px;
+        .container-horarios-consultorio{
+            margin-right: 0px;
+            height: 450px;
+
+            .tit-horarios-consultorio{
+                position: absolute;
+                top: 845px;
+            }
+
+            .horarios-consultorio{
+                width: 200px;
+                
+                ul{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 562px){
+    .navbar{
+        .container-fluid{
+            .boton-nav-nst{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+
+    .contenedor-nosotros{
+        
+        .img-cuerpo{
+            display: none;
+        }   
+
+        .titulo-quienes{
+            position: absolute;
+            top: 0px;
+            left: -50px;
+        }
+
+        .texto-titulo{
+            padding: 20px;
+            margin-bottom: 200px;
+            margin-top: 0px;
+            position: absolute;
+            top: 300px;
+            left: -60px;
+
+        }
+
+        .texto-cuerpo{
+            margin-bottom: 200px;
+            position: absolute;
+            left: -70px;
+            bottom: -100px
+        }
+    }
+
+
+    .formacion{
+        height: 850px;
+        width: 400px;
+        padding: 0px;
+        justify-content: left;
+        position: absolute;
+        left: 65px;
+        bottom: -1000px;
+
+        .titulo-formacion{
+            position: absolute;
+            left: 55px;
+        }
+
+        .dra-nombre{
+            position: absolute;
+            top: 200px;
+            left: 70px;
+        }
+
+        .dr-nombre{
+            position: absolute;
+            top: 550px;
+            left: 100px;
+        }
+        
+        .luciana{
+            position: absolute;
+            right: 10px;
+            top: 300px;
+        }
+
+        .santiago{
+            position: absolute;
+            right: 10px;
+            top: 650px;
+        }
+
+        
+    }
 }
