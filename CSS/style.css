@@ -386,12 +386,13 @@ body {
   .navbar .container-fluid .boton-nav-gl {
     position: absolute;
     top: 10px;
-    right: 300px;
+    right: 10px;
   }
   .text {
     font-size: 3em;
     position: absolute;
-    right: 325px;
+    right: 625px;
+    width: 700px;
   }
   .galeria-img {
     width: 90%;
@@ -410,18 +411,17 @@ body {
   .navbar .container-fluid button {
     position: absolute;
     top: 10px;
-    right: 65px;
+    transform: translateX(55px);
   }
   .text-inicio {
     font-size: 60px;
     position: absolute;
     left: 100px;
   }
-  .container {
-    margin-right: 0px;
+  .container .container-formulario {
+    margin-left: 7px;
   }
   .container .container-horarios-consultorio {
-    margin-right: 0px;
     height: 450px;
   }
   .container .container-horarios-consultorio .tit-horarios-consultorio {
@@ -436,31 +436,27 @@ body {
   .container .container-horarios-consultorio .horarios-consultorio ul {
     font-size: 14px;
   }
-  .contenedor-redes {
-    margin-right: 0px;
-  }
   .contenedor-redes .container-redes {
-    margin-right: 0px;
     display: flex;
     height: 600px;
   }
   .contenedor-redes .container-redes .titulo-redes {
     position: absolute;
   }
+  .contenedor-redes .container-redes .iconos-redes {
+    width: 100px;
+  }
   .contenedor-redes .container-redes .iconos-redes .bi-instagram {
     position: absolute;
     top: 1750px;
-    right: 190px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-facebook {
     position: absolute;
     top: 1450px;
-    right: 190px;
   }
   .contenedor-redes .container-redes .iconos-redes .bi-twitter {
     position: absolute;
     top: 1600px;
-    right: 190px;
   }
   .container-location {
     display: none;
@@ -472,10 +468,10 @@ body {
     display: none;
   }
   /* Sobre Nosotros */
-  .navbar .container-fluid .boton-nav-nst {
+  .navbar .container-fluid button {
     position: absolute;
     top: 10px;
-    right: 10px;
+    transform: translateX(-5px);
   }
   .contenedor-nosotros .img-cuerpo {
     display: none;
@@ -497,16 +493,18 @@ body {
     margin-bottom: 200px;
     position: absolute;
     left: -70px;
-    bottom: -700px;
+    top: 1000px;
   }
   .formacion {
     height: 850px;
-    width: 400px;
+    width: 200px;
     padding: 0px;
     justify-content: left;
     position: absolute;
-    left: 7px;
-    bottom: -1700px;
+    top: 1900px;
+    transform: translateX(-53px);
+    padding: 0;
+    margin-top: 0;
   }
   .formacion .titulo-formacion {
     position: absolute;
@@ -536,13 +534,14 @@ body {
   .navbar .container-fluid .boton-nav-gl {
     position: absolute;
     top: 10px;
-    right: 630px;
+    right: 60px;
   }
   .text {
     font-size: 25px;
     position: absolute;
     top: 100px;
     left: -570px;
+    width: 370px;
   }
   .galeria-img {
     position: absolute;
@@ -553,15 +552,20 @@ body {
   .container-galeria {
     position: absolute;
     top: -500px;
-    left: px;
+    left: 7px;
   }
 }
 @media (max-width: 375px) {
+  .navbar .container-fluid button {
+    position: absolute;
+    top: 10px;
+    transform: translateX(55px);
+  }
   .text-inicio {
     font-size: 60px;
   }
-  .container {
-    margin-right: 0px;
+  .container .container-formulario {
+    margin-right: 7px;
   }
   .container .container-horarios-consultorio {
     margin-right: 0px;
@@ -622,16 +626,14 @@ body {
   .contenedor-nosotros .texto-cuerpo {
     margin-bottom: 200px;
     position: absolute;
-    bottom: -1000px;
+    top: 1000px;
   }
   .formacion {
     height: 850px;
     width: 380px;
     padding: 0px;
-    justify-content: left;
     position: absolute;
-    bottom: -2200px;
-    left: 0;
+    top: 2200px;
   }
   .formacion .dra-nombre {
     position: absolute;
@@ -654,14 +656,14 @@ body {
     top: 650px;
   }
   /* Galeria */
-  .navbar .container-fluid .boton-nav-gl {
+  .navbar .container-fluid button {
     position: absolute;
     top: 10px;
-    right: 30px;
+    transform: translateX(-5px);
   }
   .text {
-    height: 200px;
-    width: 300px;
+    height: 70px;
+    width: 200px;
     display: show;
     font-size: 30px;
     position: absolute;
@@ -675,8 +677,12 @@ body {
   }
   .container-galeria {
     position: absolute;
+    max-height: 200px;
     top: -500px;
-    left: -13px;
+    left: 35px;
+  }
+  .container-galeria .card {
+    max-width: 300px;
   }
 }
 @media (max-width: 452px) {

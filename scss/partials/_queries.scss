@@ -56,6 +56,7 @@
         .titulo-consultorio{
             max-width: 200px;
         }
+
     }
     
     .container-redes{
@@ -155,7 +156,7 @@
         .boton-nav-gl{
             position: absolute;
             top: 10px;
-            right: 300px;
+            right: 10px;
         }
     }
 }
@@ -164,7 +165,8 @@
 .text{
     font-size: 3em;
     position: absolute;
-    right: 325px;
+    right: 625px;
+    width: 700px;
 }
 
 .galeria-img{
@@ -183,7 +185,7 @@
 
 }
 
-@media (max-width:$se){
+@media (max-width:$XR){
 /* Inicio mobile */
 
 .navbar{
@@ -191,7 +193,7 @@
         button{
             position: absolute;
             top: 10px;
-            right: 65px;
+            transform: translateX(55px);
         }
     }
 }
@@ -204,9 +206,12 @@
     }
 
     .container{
-        margin-right: 0px;
+
+        .container-formulario{
+            margin-left: 7px;
+        }
+
         .container-horarios-consultorio{
-            margin-right: 0px;
             height: 450px;
 
             .tit-horarios-consultorio{
@@ -227,9 +232,7 @@
     }
 
     .contenedor-redes{
-        margin-right: 0px;
         .container-redes{
-            margin-right: 0px;
             display: flex;
             height: 600px;
 
@@ -238,22 +241,20 @@
             }
 
             .iconos-redes{
+                width: 100px;
                 .bi-instagram{
                     position: absolute;
                     top: 1750px;
-                    right: 190px;
                 }
 
                 .bi-facebook{
                     position: absolute;
                     top: 1450px;
-                    right: 190px;
                 }
 
                 .bi-twitter{
                     position: absolute;
                     top: 1600px;
-                    right: 190px;
                 }
             }
         }
@@ -278,10 +279,10 @@
 
     .navbar{
         .container-fluid{
-            .boton-nav-nst{
+            button{
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                transform: translateX(-5px);
             }
         }
     }
@@ -312,19 +313,22 @@
             margin-bottom: 200px;
             position: absolute;
             left: -70px;
-            bottom: -700px;
+            top: 1000px;
         }
     }
 
 
     .formacion{
         height: 850px;
-        width: 400px;
+        width: 200px;
         padding: 0px;
         justify-content: left;
         position: absolute;
-        left: 7px;
-        bottom: -1700px;
+        top: 1900px;
+        transform: translateX(-53px);
+        padding: 0;
+        margin-top:0;
+        
 
         .titulo-formacion{
             position: absolute;
@@ -365,7 +369,7 @@
         .boton-nav-gl{
             position: absolute;
             top: 10px;
-            right: 630px;
+            right: 60px;
         }
     }
 }
@@ -376,6 +380,7 @@
     position: absolute;
     top: 100px;
     left: -570px;
+    width: 370px;
 }
 
 .galeria-img{
@@ -388,7 +393,7 @@
 .container-galeria{
     position: absolute;
     top: -500px;
-    left: px;
+    left: 7px;
 }
 
 }
@@ -397,12 +402,26 @@
 
 @media (max-width: $mobile){
 
+    .navbar{
+        .container-fluid{
+            button{
+                position: absolute;
+                top: 10px;
+                transform: translateX(55px);
+            }
+        }
+    }
+
     .text-inicio{
         font-size: 60px;
     }
 
     .container{
-        margin-right: 0px;
+
+        .container-formulario{
+            margin-right: 7px;
+        }
+
         .container-horarios-consultorio{
             margin-right: 0px;
             .horarios-consultorio{
@@ -482,7 +501,7 @@
         .texto-cuerpo{
             margin-bottom: 200px;
             position: absolute;
-            bottom: -1000px;
+            top: 1000px;
         }
     }
 
@@ -491,10 +510,8 @@
         height: 850px;
         width: 380px;
         padding: 0px;
-        justify-content: left;
         position: absolute;
-        bottom: -2200px;
-        left: 0;
+        top: 2200px;
 
 
         .dra-nombre{
@@ -528,17 +545,17 @@
 
 .navbar{
     .container-fluid{
-        .boton-nav-gl{
+        button{
             position: absolute;
             top: 10px;
-            right: 30px;
+            transform: translateX(-5px);
         }
     }
 }
 
     .text{
-        height: 200px;
-        width: 300px;
+        height: 70px;
+        width: 200px;
         display: show;
         font-size: 30px;
         position: absolute;
@@ -554,8 +571,13 @@
 
     .container-galeria{
         position: absolute;
+        max-height: 200px ;
         top: -500px;
-        left: -13px;
+        left: 35px;
+
+        .card{
+            max-width: 300px;
+        }
     }
 
 }
