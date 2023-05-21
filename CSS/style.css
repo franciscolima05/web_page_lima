@@ -494,6 +494,7 @@ body {
     position: absolute;
     left: -70px;
     top: 1000px;
+    width: 400px;
   }
   .formacion {
     height: 850px;
@@ -546,7 +547,7 @@ body {
   .galeria-img {
     position: absolute;
     top: 200px;
-    right: 7px;
+    left: 200px;
     width: 400px;
   }
   .container-galeria {
@@ -622,38 +623,23 @@ body {
     padding: 20px;
     margin-bottom: 200px;
     margin-top: 0px;
+    width: 350px;
   }
   .contenedor-nosotros .texto-cuerpo {
     margin-bottom: 200px;
     position: absolute;
     top: 1000px;
+    width: 350px;
   }
   .formacion {
     height: 850px;
-    width: 380px;
+    width: 280px;
     padding: 0px;
     position: absolute;
+    left: -100px;
     top: 2200px;
-  }
-  .formacion .dra-nombre {
-    position: absolute;
-    top: 200px;
-    left: 70px;
-  }
-  .formacion .dr-nombre {
-    position: absolute;
-    top: 550px;
-    left: 100px;
-  }
-  .formacion .luciana {
-    position: absolute;
-    right: 10px;
-    top: 300px;
-  }
-  .formacion .santiago {
-    position: absolute;
-    right: 10px;
-    top: 650px;
+    margin: 0;
+    display: none;
   }
   /* Galeria */
   .navbar .container-fluid button {
@@ -672,8 +658,7 @@ body {
   }
   .galeria-img {
     position: absolute;
-    right: 0px;
-    width: 400px;
+    left: 200px;
   }
   .container-galeria {
     position: absolute;
@@ -896,6 +881,30 @@ body {
     position: absolute;
     right: 10px;
     top: 650px;
+  }
+}
+@media (max-width: 990px) {
+  .navbar .container-fluid .boton-nav-gl {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .text {
+    font-size: 3em;
+    position: absolute;
+    right: 625px;
+    width: 700px;
+  }
+  .galeria-img {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    right: 40px;
+  }
+  .container-galeria {
+    position: absolute;
+    top: -200px;
+    left: 190px;
   }
 }
 
